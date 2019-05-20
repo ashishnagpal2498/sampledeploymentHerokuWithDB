@@ -27,7 +27,7 @@ app.post('/items',(req,res)=>{
     ).then(()=> res.redirect('/items'))
         .catch((err)=> console.error(err))
 })
-
+app.use((req,res)=>{res.status(404).send('Error there')})
 
 app.listen(PORT,()=>{
     console.log("server has started")

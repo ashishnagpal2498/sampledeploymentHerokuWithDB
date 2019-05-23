@@ -1,0 +1,12 @@
+{
+  "name": "heroku-sample-deployment",
+  "repository" : "https://github.com/ashishnagpal2498/sampledeploymentHerokuWithDB",
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
+  "buildpacks": [
+    {
+      "url" : "heroku/nodejs"
+    }
+  ]
+}
